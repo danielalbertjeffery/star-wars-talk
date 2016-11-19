@@ -6,11 +6,11 @@ $star-wars-gold: rgba(254, 230, 61, 1.0);
 
 body {
     background-color: black;
+    color: $star-wars-gold;
 }
 
 a {
     text-decoration: none;
-    color: $star-wars-gold;
     font-size: 24px;
     font-family: "Helvetica Neue";
 }
