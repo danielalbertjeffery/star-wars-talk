@@ -1,0 +1,12 @@
+
+<div class="character-list">
+    {{#each model as |character|}}
+        {{#link-to "characters.character" character}}
+            <img src="/images/{{character.image}}" alt="{{character.name}}" class="thumbnail">
+        {{/link-to}}
+    {{/each}}
+</div>
+
+<div class="character-single">
+    {{outlet}}
+</div>

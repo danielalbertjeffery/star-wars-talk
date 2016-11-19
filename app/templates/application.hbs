@@ -1,0 +1,18 @@
+<div class="container">
+
+    <header>
+        {{#link-to "index"}}
+            <img src="/images/star-wars-logo.png" alt="Star Wars" class="star-wars-logo" />
+        {{/link-to}}
+        <nav>
+            {{#link-to "index" class="nav-item"}}Add a Character{{/link-to}}
+            {{#link-to "characters" class="nav-item"}}Characters{{/link-to}}
+        </nav>
+
+    </header>
+
+    <main>
+        {{outlet}}
+    </main>
+
+</div>

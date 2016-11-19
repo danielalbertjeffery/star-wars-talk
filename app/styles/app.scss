@@ -1,0 +1,56 @@
+$star-wars-gold: rgba(254, 230, 61, 1.0);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+a, p {
+    text-decoration: none;
+    color: $star-wars-gold;
+    padding: 0 10px;
+    font-size: 24px;
+    font-family: "Helvetica Neue";
+}
+
+img {
+    max-width: 100%;
+    margin: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+nav {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.star-wars-logo {
+    width: 300px;
+}
+
+main {
+    display: flex;
+}
+
+.character-list {
+    width: 300px;
+}
+
+.character-single {
+    margin-left: 50px;
+    width: 650px;
+}
