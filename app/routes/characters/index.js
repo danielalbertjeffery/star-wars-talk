@@ -11,7 +11,6 @@ export default Ember.Route.extend({
                 console.log("Saved character ", newCharacter.name);
                 this.transitionTo('characters.character', newCharacter);
             });
-            this.set('character', {});
 
         }
     }
