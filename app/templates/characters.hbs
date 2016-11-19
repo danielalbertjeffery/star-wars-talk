@@ -2,7 +2,7 @@
 <div class="character-list">
     {{#each model as |character|}}
         {{#link-to "characters.character" character}}
-            <img src="/images/{{character.image}}" alt="{{character.name}}" class="thumbnail">
+            <img src="{{character.image}}" alt="{{character.name}}" class="thumbnail">
         {{/link-to}}
     {{/each}}
 </div>
