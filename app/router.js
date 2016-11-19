@@ -8,7 +8,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('characters', function() {
-    this.route('new');
     this.route('character', {path: ':character_id'});
   });
 });
