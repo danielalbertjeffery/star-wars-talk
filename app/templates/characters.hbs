@@ -1,12 +1,13 @@
+<div class="flex-row">
+    <div class="character-list">
+        {{#each model as |character|}}
+            {{#link-to "characters.character" character}}
+                <img src="{{character.image}}" alt="{{character.name}}" class="thumbnail">
+            {{/link-to}}
+        {{/each}}
+    </div>
 
-<div class="character-list">
-    {{#each model as |character|}}
-        {{#link-to "characters.character" character}}
-            <img src="{{character.image}}" alt="{{character.name}}" class="thumbnail">
-        {{/link-to}}
-    {{/each}}
-</div>
-
-<div class="character-single">
-    {{outlet}}
+    <div class="character-single">
+        {{outlet}}
+    </div>
 </div>
