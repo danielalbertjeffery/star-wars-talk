@@ -1,4 +1,7 @@
 <img src="{{model.image}}" alt="{{model.name}}" class="medium-image"/>
-<p>{{model.name}}</p>
+
+{{#link-to "characters.character"}}
+    {{model.name}}
+{{/link-to}}
 
 <button {{action 'remove' model}}>Remove Character</button>

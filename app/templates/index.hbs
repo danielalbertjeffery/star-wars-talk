@@ -1,5 +1,11 @@
-{{input value=model.name}}<br>
+<div class="form-control">
+    <label for="name">Character Name: <label>
+    {{input value=model.name id="name"}}
+</div>
 
-{{input value=model.image}}<br>
+<div class="form-control">
+    <label for="image">Character Image: </label>
+    {{input value=model.image}}
+</div>    
 
 <button {{action "save" model}}>Add Character</button>
