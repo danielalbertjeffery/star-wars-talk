@@ -17,12 +17,18 @@ a {
 }
 
 img {
+    display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.button {
+
 }
 
 header {
@@ -35,6 +41,14 @@ nav {
     text-align: right;
 }
 
+.nav-item {
+    padding: 0 5px;
+}
+
+.thumbnail-link {
+    display: block;
+}
+
 .star-wars-logo {
     width: 200px;
 }
@@ -43,11 +57,28 @@ nav {
     display: flex;
 }
 
-.character-list {
-    width: 300px;
+.characters {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
-.character-single {
-    margin-left: 50px;
-    width: 650px;
+.character {
+
+}
+
+.character-image {
+    margin: 10px;
+}
+
+.display {
+    width: 70%
+}
+
+.display-image {
+    margin-bottom: 20px;
+}
+
+.character-info {
+    justify-content: flex-end;
 }

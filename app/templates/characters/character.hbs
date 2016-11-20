@@ -1,7 +1,10 @@
-<img src="{{model.image}}" alt="{{model.name}}" class="medium-image"/>
+<img src="{{model.image}}" alt="{{model.name}}" class="display-image"/>
 
-{{#link-to "characters.character"}}
-    {{model.name}}
-{{/link-to}}
 
-<button {{action 'remove' model}}>Remove Character</button>
+<div class="character-info flex-row">
+    {{#link-to "characters.character"}}
+        {{model.name}}
+    {{/link-to}}
+
+    <button {{action 'remove' model}}>Remove Character</button>
+</div>
